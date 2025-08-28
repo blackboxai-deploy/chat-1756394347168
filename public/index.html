@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CloudTask - Your SaaS Solution</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f9fafb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #4f46e5;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #c7d2fe;
+    }
+
+    .hero {
+      background: #6366f1;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .btn-primary {
+      background: #4338ca;
+      color: white;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 4px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-primary:hover {
+      background: #3730a3;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #4f46e5;
+      text-align: center;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 2rem;
+    }
+
+    .feature {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+      padding: 2rem;
+      flex: 1 1 250px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature h4 {
+      margin-bottom: 1rem;
+      color: #4338ca;
+    }
+
+    .pricing-cards {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+      padding: 2rem;
+      flex: 1 1 250px;
+      text-align: center;
+      border: 2px solid transparent;
+      transition: border-color 0.3s ease;
+    }
+
+    .card:hover {
+      border-color: #4f46e5;
+    }
+
+    .card h4 {
+      margin-bottom: 1rem;
+      color: #4f46e5;
+    }
+
+    .price {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #111827;
+    }
+
+    .card ul {
+      list-style: none;
+      margin-bottom: 1.5rem;
+      color: #6b7280;
+    }
+
+    .card ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .testimonials {
+      background: #eef2ff;
+      padding: 3rem 1rem;
+      border-radius: 8px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .testimonial {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .testimonial p {
+      font-style: italic;
+      margin-bottom: 1rem;
+      color: #374151;
+    }
+
+    .testimonial h5 {
+      font-weight: 700;
+      color: #4f46e5;
+    }
+
+    footer {
+      background: #4f46e5;
+      color: white;
+      text-align: center;
+      padding: 1rem 2rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .features, .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CloudTask</h1>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#signup" class="btn-primary">Get Started</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Manage Your Tasks Effortlessly in the Cloud</h2>
+    <p>CloudTask is a powerful SaaS platform that helps teams collaborate, track, and complete tasks efficiently from anywhere.</p>
+    <a href="#signup" class="btn-primary">Start Your Free Trial</a>
+  </section>
+
+  <main>
+    <section id="features">
+      <h3>Features</h3>
+      <div class="features">
+        <div class="feature">
+          <h4>Real-time Collaboration</h4>
+          <p>Work together with your team in real-time, no matter where you are.</p>
+        </div>
+        <div class="feature">
+          <h4>Task Automation</h4>
+          <p>Automate repetitive tasks and focus on what matters most.</p>
+        </div>
+        <div class="feature">
+          <h4>Analytics & Reporting</h4>
+          <p>Gain insights with detailed reports and analytics dashboards.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <h3>Pricing</h3>
+      <div class="pricing-cards">
+        <div class="card">
+          <h4>Basic</h4>
+          <p class="price">$9<span style="font-size: 1rem;">/mo</span></p>
+          <ul>
+            <li>Up to 5 users</li>
+            <li>Basic task management</li>
+            <li>Email support</li>
+          </ul>
+          <a href="#signup" class="btn-primary">Choose Basic</a>
+        </div>
+        <div class="card">
+          <h4>Pro</h4>
+          <p class="price">$29<span style="font-size: 1rem;">/mo</span></p>
+          <ul>
+            <li>Up to 50 users</li>
+            <li>Advanced features</li>
+            <li>Priority support</li>
+          </ul>
+          <a href="#signup" class="btn-primary">Choose Pro</a>
+        </div>
+        <div class="card">
+          <h4>Enterprise</h4>
+          <p class="price">Contact Us</p>
+          <ul>
+            <li>Unlimited users</li>
+            <li>Custom integrations</li>
+            <li>Dedicated support</li>
+          </ul>
+          <a href="#signup" class="btn-primary">Contact Sales</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <h3>What Our Customers Say</h3>
+      <div class="testimonials">
+        <div class="testimonial">
+          <p>"CloudTask transformed how our team works. The real-time collaboration is a game changer!"</p>
+          <h5>- Sarah L., Project Manager</h5>
+        </div>
+        <div class="testimonial">
+          <p>"The automation features saved us countless hours every week. Highly recommend!"</p>
+          <h5>- James K., CTO</h5>
+        </div>
+      </div>
+    </section>
+
+    <section id="signup" style="text-align:center;">
+      <h3>Get Started Today</h3>
+      <p>Sign up now and enjoy a 14-day free trial with full access to all features.</p>
+      <form style="max-width: 400px; margin: 0 auto;" action="#" method="POST">
+        <input type="email" name="email" placeholder="Your email address" required style="width: 100%; padding: 0.75rem; margin-bottom: 1rem; border-radius: 4px; border: 1px solid #ccc; font-size: 1rem;" />
+        <button type="submit" class="btn-primary" style="width: 100%;">Start Free Trial</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2024 CloudTask. All rights reserved.
+  </footer>
+</body>
+</html>
